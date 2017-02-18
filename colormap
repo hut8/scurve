@@ -2,7 +2,7 @@
 import os.path, math
 import scurve
 from scurve import progress
-import Image, ImageDraw
+from PIL import Image, ImageDraw
 
 def sortedPixels(csource, img, quiet):
     img = Image.open(img, "r")
@@ -72,8 +72,7 @@ def main():
     map = scurve.fromSize(options.map, 2, options.size**2)
     p = sortedPixels(csource, args[0], options.quiet)
     drawmap(map, p, args[1], options.quiet)
-    
+
 
 
 main()
-
