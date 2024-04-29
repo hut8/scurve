@@ -1,5 +1,8 @@
 #!/usr/local/bin/python
-import sys, time, math, datetime
+import sys
+import time
+import math
+import datetime
 
 class Inplace:
     def __init__(self, title="", stream=sys.stderr):
@@ -95,4 +98,3 @@ class Dummy:
     def clear(self, *args, **kwargs): pass
     def full(self, *args, **kwargs): pass
     def set_target(self, *args, **kwargs): pass
-
