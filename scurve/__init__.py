@@ -1,4 +1,4 @@
-import hilbert, zigzag, zorder, natural, graycurve, hcurve
+from . import hilbert, zigzag, zorder, natural, graycurve, hcurve
 
 
 curveMap = {
@@ -27,6 +27,3 @@ def fromOrder(curve, dimension, order):
         the meaning of "order" may differ for each curve.
     """
     return curveMap[curve](dimension, order)
-
-
-

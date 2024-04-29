@@ -1,5 +1,5 @@
-import utils, math
-
+import math
+from . import utils
 
 def transform(entry, direction, width, x):
     assert x < 2**width
@@ -109,4 +109,3 @@ class Hilbert:
 
     def point(self, idx):
         return hilbert_point(self.dimension, self.order, idx)
-
